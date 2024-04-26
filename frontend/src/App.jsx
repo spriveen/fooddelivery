@@ -4,10 +4,17 @@ import Home from './Pages/Home/Home';
 import Cart from './Pages/Cart/Cart';
 import Placeorder from './Pages/Placeorder/Placeorder';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
+    
+    
+    
+    
+    
+    <div className='App'>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home />} />
@@ -15,8 +22,10 @@ const App = () => {
       <Route path='/order' element={<Placeorder />} />
     </Routes>
     </div>
-  );
-};
+    <Footer/>
+    </>
+  )
+}
 
 export default App;
 
